@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Plus</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <script src="./src/scripts/index.js" defer></script>
+
+</head>
+<body>
+    <div id="calculator">
+
+        <h2>Calcular capacitor ideal</h2>
+        <label for="frequency">Frequência de Corte (Hz):</label>
+        <input type="number" id="frequency" min="1" step="1" placeholder="Digite a frequência aqui..."><br><br>
+        
+        <label for="impedance">Impedância (Ohms):</label>
+        <input type="number" id="impedance" min="1" step="1" placeholder="Digite a impedância aqui..."><br><br>
+        
+        <label for="power">Potência do Amplificador (Watts):</label>
+        <input type="number" id="power" min="1" step="1" placeholder="Digite a potência aqui..."><br><br>
+        
+        <button onclick="calculate()">Calcular</button><br><br>
+        
+        <div id="result"></div>
+    </div>
+    
+</body>
+</html>
